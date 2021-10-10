@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import s from './Filter.module.css';
 
 export default class Filter extends Component {
   handleFilter = e => {
@@ -11,6 +12,7 @@ export default class Filter extends Component {
         Find contact by name
         <label htmlFor="">
           <input
+            className={s.filter__field}
             type="text"
             name="filter"
             value={filter}
